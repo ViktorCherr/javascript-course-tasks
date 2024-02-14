@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Statistics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="bookForm">
+        <label for="bookTitle">Book Title:</label>
+        <input type="text" id="bookTitle" name="bookTitle" required>
+
+        <label for="genre">Genre:</label>
+        <select id="genre" name="genre" required>
+            <option value="Fiction">Fiction</option>
+            <option value="Science Fiction">Science Fiction</option>
+            <option value="Mystery">Mystery</option>
+            <!-- Добавьте другие жанры по необходимости -->
+        </select>
+
+        <button type="button" onclick="addBook()">Add Book</button>
+    </form>
+
+    <div class="stats" id="stats">
+        <h2>Statistics</h2>
+        <div id="genreStats" class="genre-stats"></div>
+        
+        <h3>History</h3>
+        <ul id="history"></ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
