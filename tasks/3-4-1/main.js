@@ -4,3 +4,8 @@
 Присвойте переменным значения и выведите значения в модальном окне с помощью alert. 
 Значения переменных должны идти с новой строки, для этого используйте \n
 */
+let name = "Viktor";
+let surName = "Chernov";
+let secondName = "Valerievich";
+let age = 29;
+alert(`${name}\n${surName}\n${secondName}\n${age}`);
