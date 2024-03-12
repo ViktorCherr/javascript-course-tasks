@@ -14,5 +14,5 @@ let discount = +prompt("Введите скидку в процентах:");
 alert(
     `Сумма покупки без скидки: ${coast * qnty}\n
     Ваша скидка: ${discount}%\n
-    Сумма со скидкой: ${coast * (100 - discount)}
+    Сумма со скидкой: ${coast * qnty * (1 - discount/100)}
 `);
