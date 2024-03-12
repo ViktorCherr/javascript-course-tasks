@@ -5,9 +5,9 @@ h1
 первого элемента списка li
 второго label (Фото котика/собаки)
 */
-const h1 = document.querySelector("h1");
-const h2 = document.querySelectorAll("h2")[0];
-const liFirst = document.querySelector("cat-list")[0];
-const labeltwo = document.querySelector(".cat-photo");
+const h1 = document.querySelector("h1").innerText;
+const h2 = document.querySelectorAll("h2")[0].innerText;
+const liFirst = document.getElementsByTagName("li")[0].innerText;
+const labeltwo = document.querySelector(".cat-photo").innerText;
 
 console.log(`${h1}\n${h2}\n${liFirst}\n${labeltwo}`);
