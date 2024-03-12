@@ -5,3 +5,6 @@
 Используйте функцию prompt и alert для решения задания. 
 При этом помните, что нужно преобразовать строку в число.
 */
+let num1 = +prompt("Enter a number please:");
+let num2 = +prompt("Enter a number please:");
+alert(num1 + num2);
