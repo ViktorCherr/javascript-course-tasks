@@ -12,7 +12,7 @@
  */
 
 const button = document.querySelector("button");
-const celsius = +document.querySelector("#celsius").value;
+const celsius = parseInt(document.querySelector("#celsius").value);
 const result = document.querySelector("#result");
 
 button.addEventListener("click", function(){
