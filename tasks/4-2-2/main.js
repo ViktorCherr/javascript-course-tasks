@@ -10,3 +10,11 @@
  по нажатию на кнопку. И после ее выполнения в div с id="result" должна 
  появиться надпись с вычисленным преобразованием.
  */
+
+const button = document.querySelector("button");
+const celsius = document.querySelector("#celsius");
+const result = document.querySelector("#result");
+
+button.addEventListener("click", function(){
+    result.textContent = +celsius.value * (9/5) + 32;
+});
