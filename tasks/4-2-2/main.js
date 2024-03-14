@@ -12,9 +12,9 @@
  */
 
 const button = document.querySelector("button");
-const celsius = parseInt(document.querySelector("#celsius").value);
+const celsius = document.querySelector("#celsius");
 const result = document.querySelector("#result");
 
 button.addEventListener("click", function(){
-    result.textContent = `${celsius} градуса Цельсия = ${celsius * (9/5) + 32} градуса по Фаренгейту`;
+    result.textContent = `${celsius.value} градуса Цельсия = ${+celsius.value * (9/5) + 32} градуса по Фаренгейту`;
 });
