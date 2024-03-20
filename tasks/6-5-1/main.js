@@ -16,3 +16,14 @@
 У данной задачи множество решений, но ее действительно можно решить, 
 используя только условия.
  */
+const btn = document.querySelector("#submit-order");
+const input = document.querySelector("#credit-card");
+const res = document.querySelector("#res");
+
+btn.addEventListener("click", function(){
+    if (input.value.length === 16 && input.value[0] !== "0") {
+        alert("Успешно!");
+    } else {
+        alert("Введите корректный номер!");
+    }
+});
