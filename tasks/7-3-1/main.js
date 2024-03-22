@@ -6,3 +6,10 @@
 То есть, открывая страницу пользователь видит список сразу, но 
 этот код генерируется javascript. В html только элемент <ul>.
  */
+let list = document.querySelector("#list");
+
+for (let i = 1; i <= 5; i++) {
+    let elem = document.createElement("li");
+    elem.textContent = i;
+    list.appendChild(elem);
+}
