@@ -10,9 +10,9 @@ let btn = document.querySelector(".btn");
 let tableCont = document.querySelector("#table-container");
 
 btn.addEventListener("click", function(){
+    tableCont.innerHTML = "";
     let number = parseInt(num.value);
     if (number > 0 && number <= 10) {
-        tableCont.innerHTML = "";
         table = document.createElement("table");
         for (let i = 1; i <= 10; i++) {
             let tableRow = document.createElement("tr");
