@@ -8,3 +8,17 @@
 должна выводить сообщение об ошибке. Для реализации этой задачи можно 
 использовать switch в комбинации с условным оператором.
 */
+
+const languages = document.querySelector('#language-select');
+
+document.querySelector('#change-language-btn').addEventListener("click", changeLang);
+
+function changeLang() {
+    let indx = languages.selectedIndex;
+    let lang = languages[indx].text;
+    if (lang) {
+        console.log(`Language changed to ${lang}`);
+    } else {
+        document.querySelector('#error-message').textContent = "This language was not found";
+    }
+}
