@@ -14,6 +14,7 @@ function addStudent() {
             let li = document.createElement('li');
             li.textContent = studentName;
             studentsArray.push(li);
+            document.querySelector('#student-name').value = '';
             showStudents();
         } else {
             alert("Введите имя!");
