@@ -115,3 +115,7 @@ body{
     text-transform: uppercase;
     margin: 10px 0 15px;
 }
+#length{
+    width: 40px;
+    text-align: center;
+}

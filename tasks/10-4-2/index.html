@@ -11,8 +11,8 @@
         <h2>Генератор пароля</h2>
         <div class="wrapper">
             <div class="input-box">
-                <input type="text" disabled>
-                <span class="material-symbols-outlined">content_copy</span>
+                <input type="text" id="result" disabled>
+                <span class="material-symbols-outlined" id="copy-btn">content_copy</span>
             </div>
             <div class="settings">
                 <label class="title">Настройки</label>
@@ -42,6 +42,8 @@
                         <label for="spaces">Include Spaces</label>
                     </li>
                 </ul>
+                <label for="length">Введите длину пароля от 5 до 20 символов</label>
+                <input type="number" id="length">
             </div>
 
             <button class="generate-btn">Сгенерировать</button>
