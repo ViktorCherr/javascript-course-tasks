@@ -13,17 +13,38 @@ const genreStats = new Map();
 function addBook() {
     const title = document.getElementById('bookTitle').value;
     const genre = document.getElementById('genre').value;
-
+    if (title !== '') {
+        updateStats(genre);
+        updateViewHistory(title, genre);
+        updateViewStats();
+        document.getElementById('bookTitle').value = '';
+    } else {
+        alert('Укажите название книги!');
+    }
 }
 
 function updateStats(genre) {
-
+    if (genreStats.has(genre)) {
+        genreStats.set(genre, genreStats.get(genre) + 1);
+    } else {
+        genreStats.set(genre, 1);
+    }
 }
 
 function updateViewHistory(title, genre){
-
+    const history = document.querySelector('#history');
+    let li = document.createElement('li');
+    li.innerHTML = `title: ${title} | genre: (${genre})`;
+    history.insertBefore(li, history.childNodes[0]);
 }
 
 function updateViewStats(){
-
+    const stats = document.querySelector('#genreStats');
+    stats.innerHTML = '';
+    for ([key, value] of genreStats) {
+        let div = document.createElement('div');
+        div.className = 'genre';
+        div.innerHTML = `<p>${key}:</p><p>${value} books</p>`;
+        stats.appendChild(div);
+    }
 }

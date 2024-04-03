@@ -47,9 +47,12 @@ form button {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .stats h2 {
     margin-bottom: 16px;
+}
+.genre{
+    display: flex;
+    justify-content: space-between;
 }
 
 .genre-item {
@@ -60,4 +63,8 @@ form button {
 
 #history {
     margin-top: 20px;
+    max-height: 120px;
+    min-height: 50px;
+    overflow-y: scroll;
+    border: 3px ridge gray;
 }
