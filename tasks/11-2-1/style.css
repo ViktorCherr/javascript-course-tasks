@@ -58,6 +58,9 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+.del-btn{
+    background-color: red;
+}
 
 ul {
     list-style-type: none;
